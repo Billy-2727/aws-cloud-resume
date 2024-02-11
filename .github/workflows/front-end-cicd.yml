@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: jakejarvis/s3-sync-action@main
+    - uses: jakejarvis/s3-sync-action@master
       with:
         args: --acl private --follow-symlinks --delete
       env:
