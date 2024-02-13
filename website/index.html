@@ -1,136 +1,290 @@
-<!DOCTYPE HTML>
-<!--
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>BM Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					
-					<h1 id="logo"><a href="#">Billy Morrison</a></h1>
-					<p>Infrastructure Engineer</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Skills</a></li>
-						<li><a href="#three">Projects</a></li>
-						<div class="view-counter">Could not read views</div>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="https://github.com/billy-2727" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto: billy.morrison27@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
-			</section>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Billy Morrison CV</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-				<!-- Main -->
-					<div id="main">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="manifest" href="site.webmanifest">
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/blue-polygon-dark-background-social-template_53876-116080.avif" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>About Me</h2>
-										<p>Hi I'm Billy, this is my cloud resume, self hosted in AWS.</p>
-									</header>
-									<p>Self-driven Infrastructure Engineer with over 5 years hands-on experience in the IT industry.
-										Skilled in developing and managing an Azure hybrid environment utilizing the benefits of self-hosted and cloud solutions.
-										Passionate about staying up to date with the latest cloud technologies and eager to learn more.</p>
-								</div>
-								
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-							</section>
 
-						<!-- Two -->
-						<section id="two" class="centered-images">
-							<div class="container">
-	
-								<header>
-									<h2>Skills</h2>
-								</header>
-	
-								<a href="#" class="image featured"><img src="images/microsoft-azure-icon-512x396-6fn0yfat.png" alt="" /></a>
-								<a href="#" class="image featured"><img src="images/Powershell.svg" alt="" /></a>
-								<a href="#" class="image featured"><img src="images/Python-logo-notext.svg.png" alt="" /></a>
-	
-								<p>I have excellent working knowledge of Azure and have an extensive background in Microsoft / Windows environments.
-									I have a love of learning and I am continuosly improving my knowledge of different technologies.</p>
-								
-							</div>
-						</section>
+</head>
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Projects</h3>
-									<p></p>
-									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Cloud Resume Challenge</h4>
-												<p>I built this resume as part of the cloud resume challenge to get familiar with AWS as well as Terraform. Clicking the image will take you to my the Github page, please look at the ReadMe file for more info!</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Placeholder 1</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<div class="inner">
-												<h4>Placeholder 2</h4>
-												<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+<body id="top" class="ss-preload">
 
-					</div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>&copy;All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="./index.js"></script>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
 
-	</body>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>Hi, I'm Billy Morrison.</h1>
+
+                    <h3>
+                    A Glasgow based <span>infrastructure engineer</span> and this is my cloud resume, self hosted in AWS.
+                    </h3>
+                   
+                    <h3>
+                        <div class="view-counter">Could not read views</div>
+                        </h3>
+                        
+                        
+
+                    <div class="s-hero__content-social">
+                        <a href="https://www.linkedin.com/in/billymorrison27/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Billy-2727"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/user-06.jpg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    Self-driven Infrastructure Engineer with over 5 years hands-on experience in the IT industry.
+                    Skilled in developing and managing an Azure hybrid environment utilizing the benefits of self-hosted and cloud solutions.
+                    Passionate about staying up to date with the latest cloud technologies and eager to learn more.
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Peak Scientific</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Infrastructure Engineer</span> 
+                            <span class="resume-block__header-date">
+                                Aug 2022 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <ul>
+                            <li>
+                                Automated parts of the IT onboarding process using Entra AD and Azure Automations, streamlining the process and reducing pain points.
+                            </li>
+                            <li>
+                                Implemented a monitoring solution for global site internet lines using Azure Web Services and uptime-kuma.                            
+                            </li>
+                            <li>
+                                Communicated with external suppliers and internal stakeholders to implement LanSweeper asset management system for all devices on our Azure tenant.                            
+                            </li>
+                            <li>
+                                Connected LanSweeper to our ZenDesk instance via the creation of a ZenDesk app using HTML & JS and API calls using Python. Agents could then view user asset info at a glance which aided troubleshooting and saved time.        
+                            </li>
+                            <li>
+                                Connected LanSweeper to our ZenDesk instance via the creation of a ZenDesk app using HTML & JS and API calls using Python. Agents could then view user asset info at a glance which aided troubleshooting and saved time.        
+                            </li>
+                            <li>
+                                Handling third line service desk tickets and escalating to vendors when needed.                            </li>
+                            <li>
+                                Communicating with internal stakeholders to outline internal business SLA requirements.                            </li>
+                        </ul>
+
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">DXC</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Technical Remote Specialist II</span> 
+                            <span class="resume-block__header-date">
+                                Aug 2021 - Aug 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        <ul>
+                            <li>
+                                Provided excellent, customer-focused second line IT support to over 10,000 customers within the UK.
+                            </li>
+                            <li>
+                                Worked with a secure client, holding SC security clearance and handling confidential information regularly.
+                            </li>
+                            <li>
+                                Worked within a large corporate environment, communication and teamwork was key as the role was fully remote.
+                            </li>
+                            <li>
+                                Active Directory user and computer management.
+                            </li>
+                            <li>
+                                Created and maintained documentation for the service desk at both first and second line levels.                        
+                               </li>
+                            <li>
+                                Dealt daily with complex issues on legacy systems.                             </li>
+                            <li>
+                                Exchange Server users administration.                             
+                            </li>
+                        </ul>
+
+                    </p>
+
+                    <div class="resume-block">
+
+                        <div class="resume-block__header">
+                            <h4 class="h3">Scottish Leather Group</h4>
+                            <p class="resume-block__header-meta">
+                                <span>System Administrator</span> 
+                                <span class="resume-block__header-date">
+                                    Aug 2019 - Aug 2021
+                                </span>
+                            </p>
+                        </div>
+    
+                        <p>
+                            <ul>
+                                <li>
+                                    Created and maintained corporate golden image via Microsoft Deployment Tools and Windows Deployment Services.
+                                </li>
+                                <li>
+                                    Responsible for user creation in O365 and Active Directory. As well as inducting all new employees into the business, introducing them to the IT team as well as showing them how their IT equipment operated in the business.
+                                </li>
+                                <li>
+                                    Liaising with external suppliers to ensure hardware and software met requirements of the business.
+                                </li>
+       
+                            </ul>
+    
+                        </p>             
+
+                </div> <!-- end resume-block -->
+            </div>
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
 </html>
