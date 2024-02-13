@@ -1,6 +1,6 @@
 # Cloud Resume Challenge - AWS
 
-This is my solution to the Cloud Resume Challenge, the challenge is a difficult multi step process designed to enhance anyone's knowledge about the cloud. More information about this challenge can be found [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
+This is my solution to the Cloud Resume Challenge, the challenge is a difficult multi step process designed to enhance anyone's knowledge about the cloud and related technologies. More information about this challenge can be found [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
 
 # Architecture 
