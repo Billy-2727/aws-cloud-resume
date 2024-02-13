@@ -1,6 +1,6 @@
 # Cloud Resume Challenge - AWS
 
-This is my solution to the Cloud Resume Challenge, the challenge is a difficult multi step process designed to enhance anyone's knowledge about the cloud and related technologies. More information about this challenge can be found [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
+This is my solution to the Cloud Resume Challenge, the challenge is a difficult multi step process designed to enhance anyone's knowledge about the cloud and related technologies. I wrote a blog post to go along with the challend which is hosted [here]() If you would like to know more information about this challenge it can be found [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
 
 # Architecture 
@@ -20,14 +20,6 @@ This is my solution to the Cloud Resume Challenge, the challenge is a difficult 
 - Terraform
 
 ## [Live Demo](https://resume.bm27.xyz/) 
-
-
-
-
-
-
-## [Blog]()
-If you would like an extended look at how this project was made please take a look at my [blog]() that outlines how everything was put together.
 
 
 # Author
