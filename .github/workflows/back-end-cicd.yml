@@ -17,7 +17,7 @@ jobs:
             aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             aws_region: 'eu-west-2'
             function_name: terraform-func
-            zip_file: 'aws-infra\packedlamda.zip'
+            zip_file: '..\..\aws-infra\packedlamda.zip'
             
           
 
