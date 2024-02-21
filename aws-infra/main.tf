@@ -98,7 +98,81 @@ resource "aws_s3_object" "add_source_files" {
   for_each     = fileset("${path.module}./website/", "**/*.*")
   key          = each.value
   source       = "${path.module}./website/${each.value}"
-  content_type = each.value
-
 }
 
+locals {
+  s3_origin_id = "myS3Origin"
+}
+
+# Define CloudFront distribution
+resource "aws_cloudfront_distribution" "s3_distribution" {
+  origin {
+    domain_name              = aws_s3_bucket.web_bucket.bucket_domain_name
+    origin_id                = aws_s3_bucket.web_bucket.id
+    origin_access_control_id = aws_cloudfront_origin_access_control.Site_Access.id
+  }
+
+
+
+  # CloudFront distribution configuration
+  enabled             = true
+  is_ipv6_enabled     = true
+  default_root_object = "index.html" # Specify default root object
+  default_cache_behavior {
+    target_origin_id       = aws_s3_bucket.web_bucket.id
+    viewer_protocol_policy = "https-only" # Redirect HTTP to HTTPS
+    allowed_methods        = ["GET", "HEAD"]
+    cached_methods         = ["GET", "HEAD"]
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+  }
+
+  aliases = ["test.bm27.xyz"]
+
+  restrictions {
+    geo_restriction {
+      restriction_type = "none"
+    }
+  }
+
+  viewer_certificate {
+    acm_certificate_arn      = "arn:aws:acm:us-east-1:851725161095:certificate/699232a6-0fbb-4bfd-ad1a-298819316e0e"
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2018"
+  }
+}
+
+resource "aws_cloudfront_origin_access_control" "Site_Access" {
+  name                              = "Site_Access_Control"
+  origin_access_control_origin_type = "s3"
+  signing_behavior                  = "always"
+  signing_protocol                  = "sigv4"
+}
+
+resource "aws_s3_bucket_policy" "cloudfront_s3_bucket_policy" {
+  bucket = aws_s3_bucket.web_bucket.id
+  policy = jsonencode({
+    Version = "2008-10-17"
+    Id      = "PolicyForCloudFront"
+    Statement = [
+      {
+        Sid    = "AllowCloudFrontServicePrincipal"
+        Effect = "Allow"
+        Principal = {
+          Service = "cloudfront.amazonaws.com"
+        }
+        Action   = "s3:GetObject"
+        Resource = "${aws_s3_bucket.web_bucket.arn}/*"
+        Condition = {
+          StringEquals = {
+            "AWS:SourceArn" = aws_cloudfront_distribution.s3_distribution.arn
+          }
+        }
+      }
+    ]
+  })
+}
