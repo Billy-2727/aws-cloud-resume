@@ -33,6 +33,36 @@ resource "aws_iam_role" "lambda_exec_role" {
 EOF
 }
 
+resource "aws_dynamodb_table" "lamba_table" {
+  name           = "lamba_table"
+  billing_mode   = "PROVISIONED"
+  read_capacity  = 1
+  write_capacity = 1
+  hash_key       = "0"
+
+  attribute {
+    name = "0"
+    type = "S"
+  }
+
+}
+
+resource "aws_dynamodb_table_item" "lamba_table_item" {
+  table_name = aws_dynamodb_table.lamba_table.name
+  hash_key   = aws_dynamodb_table.lamba_table.hash_key
+
+  item = <<ITEM
+{
+  "0": {
+    "S": "0"
+  },
+  "views": {
+    "N": "0"
+  }
+}
+ITEM
+}
+
 resource "aws_iam_policy" "iam_policy_for_dynamodb_role" {
   name = "iam_policy_for_dynamodb_role"
   path = "/"
@@ -131,7 +161,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
     }
   }
 
-  aliases = ["test.bm27.xyz"]
+  aliases = ["resume.bm27.xyz"]
 
   restrictions {
     geo_restriction {
