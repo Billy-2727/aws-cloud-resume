@@ -24,7 +24,3 @@ If you would like to know more information about this challenge it can be found 
 - Terraform
 
 ## [Live Demo](https://resume.bm27.xyz/) 
-
-
-# Author
-- LinkedIn [Billy Morrison](https://www.linkedin.com/in/billymorrison27/)
