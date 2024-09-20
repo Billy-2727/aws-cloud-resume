@@ -2,7 +2,7 @@
 
 This is my solution to the Cloud Resume Challenge, the challenge is a difficult multi step process designed to enhance anyone's knowledge about the cloud and related technologies.
 
-❗❗**I wrote a blog post to go along with the challenge which is hosted [HERE]()**.❗❗
+❗❗**I wrote a blog post to go along with the challenge which is hosted [HERE](https://bm27.hashnode.dev/cloud-resume-challenge-aws-edition)**.❗❗
 
 If you would like to know more information about this challenge it can be found [here](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
@@ -24,7 +24,3 @@ If you would like to know more information about this challenge it can be found 
 - Terraform
 
 ## [Live Demo](https://resume.bm27.xyz/) 
-
-
-# Author
-- LinkedIn [Billy Morrison](https://www.linkedin.com/in/billymorrison27/)
